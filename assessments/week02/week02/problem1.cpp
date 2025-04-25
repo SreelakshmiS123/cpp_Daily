@@ -1,3 +1,4 @@
+//Pattern printing
 #include<iostream>
 using namespace std;
 int main()
