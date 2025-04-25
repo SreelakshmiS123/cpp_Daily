@@ -1,8 +1,10 @@
 #include<iostream>
+#include"assgmt.h"
 using namespace std;
 int main()
 {
-	cout << "This is program 2";
-	cout << "updated";
+	q3();
+	q2();
+	q1();
 	return 0;
 }
