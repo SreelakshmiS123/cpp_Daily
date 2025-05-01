@@ -24,14 +24,5 @@
     <ClCompile Include="prgm3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="minr.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="prm4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="prgm5.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

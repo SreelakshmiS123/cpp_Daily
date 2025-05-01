@@ -1,20 +1,20 @@
 #include<iostream>
-int towerOfoddity(int,int);
+int towerOfoddity(int);
 using namespace std;
 int main()
 {
 	int n;
-	int total = 20;
+	//int total = 20;
 	cout << "Enter the floor no.to go: ";
 	cin >> n;
-	towerOfoddity(n,total);
+	towerOfoddity(n);
 }
-int towerOfoddity(int n,int total)
+int towerOfoddity(int n)
 {
-	if (n > total)
+	if (n <= 0)
 		return 0;
 	else
-		cout <<(total)<< " ";
-	towerOfoddity(total-2,n);
+		for (int i = 1;i <= n;i = i + 2)
+			cout << "Floor number: "<<i << endl;
 
 }
