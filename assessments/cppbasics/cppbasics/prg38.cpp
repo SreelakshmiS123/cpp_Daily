@@ -4,7 +4,7 @@ int lengthOfstr(char str[], int start)
 	if (str[start]== '\0')
 		return 0;
 
-	return 1+ lengthOfstr(str,start+1);
+	return 1+lengthOfstr(str,start+1);
 
 }
 using namespace std;

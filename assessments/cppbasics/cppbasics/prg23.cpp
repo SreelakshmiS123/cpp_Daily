@@ -9,7 +9,7 @@ int main()
 		cin >> arr[i];
 	}
 	int start = 0;
-	int end = size - 1;
+	//int end = size - 1;
 	
 	for (int i = 0;i < size;i++)
 		for (int j = i+1;j <size;j++)
