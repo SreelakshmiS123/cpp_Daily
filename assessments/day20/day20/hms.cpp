@@ -9,7 +9,7 @@ void addPatient(int pid, string name, char gender, string address, long int mobi
 	cout << "Patient gender: " <<gender<< endl;
 	cout << "Patient address: " << address<<endl;
 	cout << "Patient mobile number: " <<mobile<< endl;
-
+	//cout << "=====================" << endl;
 }
 
 void doctorDetails(char ch)
@@ -39,29 +39,36 @@ void doctorDetails(char ch)
 void selectRoom(int n)
 {
 
-	cout<<"Room selected: " << n;
+	cout<<"Room selected: " << n<<endl;
+}
+void treatmentDetails(string diagnosis, string plan, int duration)
+{
+	cout << "Disease found: " << diagnosis;
+	cout << "Treatment plan: " << plan;
+	cout << "Treatment duration: " << duration;
 }
 int main()
 {
 
 	cout << "Welcome to mental hospital" << endl;
+	cout << "======================="<<endl;
 	 int pid;
-	string name, address;
+	 //char name[100],address[100];
+	string name,address;
 	char gender;
 	long int mobile;
 	cout << "Enter the patient id: " << endl;
 	cin >> pid;
 	cout << "Enter the patient name: " << endl;
-	cin >> name;
+	cin>>name;
 	cout << "Enter the patient gender(F/M): " << endl;
 	cin >> gender;
 	cout << "Enter the patient address: " << endl;
-	cin >> address;
+	cin>>address;
 	cout << "Enter the patient mobile number: " << endl;
 		cin>> mobile;
-
 	 addPatient(pid,name, gender,address, mobile);
-	 
+	
 	cout << "Select department:" << endl << "Ortho(a)" << endl << "Neurology(b)" << endl << "Gynocology(c)" << endl << "general medicine(d)" << endl;
 	char ch;
 	cin >> ch;
@@ -72,5 +79,10 @@ int main()
 	int n;
 	cin >> n;
 	selectRoom(n);
-
+	
+	cout << "Treatment details" << endl;
+	string diagnosis, plan;
+	int duration;
+	cin >> diagnosis >> plan >> duration;
+	treatmentDetails(diagnosis, plan, duration);
 }
