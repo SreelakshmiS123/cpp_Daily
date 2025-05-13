@@ -2,6 +2,8 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
+int constant patientcount = 0;
 void addPatient(int pid, string name, char gender, string address, long int mobile)
 {
 	//cout << "Welcome to mental hospital" << endl;
@@ -35,7 +37,7 @@ void doctorDetails(char ch)
 		cout << "Dr.Vaishnavi SR"<<endl;
 		break;
 	default:
-		cout<<""
+		cout << "Ivalid dept";
 	}
 	 
 

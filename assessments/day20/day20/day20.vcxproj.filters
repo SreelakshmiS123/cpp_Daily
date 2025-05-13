@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hms.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="hms1.cpp">
+    <ClCompile Include="hms2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

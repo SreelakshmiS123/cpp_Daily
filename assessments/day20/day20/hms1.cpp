@@ -99,12 +99,13 @@ void displayPatients() {
         cout << "No patients in the system." << endl;
         return;
     }
-
-    cout << "\nID\tName\tDisease\tRoom No\tDays\tBill\n";
-    for (int i = 0; i < patientCount; i++) {
-        cout << patients[i].id << "\t" << patients[i].name << "\t" << patients[i].disease
-            << "\t" << patients[i].roomNo << "\t" << patients[i].daysAdmitted
-            << "\t" << patients[i].totalBill << endl;
+    for (int i = 0; i < patientCount; i++){
+    cout << "ID "<< patients[i].id <<endl<<"Name "<< patients[i].name<<endl<<"Disease "<< patients[i].disease
+        <<endl<<"Room No "<< patients[i].roomNo<<"Days "<< patients[i].daysAdmitted<<endl<<"Bill "<< patients[i].totalBill <<endl;
+     
+       /* cout << patients[i].id << endl << patients[i].name << endl << patients[i].disease
+            << endl << patients[i].roomNo << endl << patients[i].daysAdmitted
+            << endl << patients[i].totalBill << endl;*/
     }
 }
 
