@@ -4,11 +4,11 @@ using namespace std;
 void addPatient(int pid, string name, char gender, string address, long int mobile)
 {
 	//cout << "Welcome to mental hospital" << endl;
-	cout << "Entered patient id: "<<pid << endl;
-	cout << "Entered patient name: " <<name<< endl;
-	cout << "Entered patient gender: " <<gender<< endl;
-	cout << "Entered patient address: " << address<<endl;
-	cout << "Entered patient mobile number: " <<mobile<< endl;
+	cout << "Patient id: "<<pid << endl;
+	cout << "Patient name: " <<name<< endl;
+	cout << "Patient gender: " <<gender<< endl;
+	cout << "Patient address: " << address<<endl;
+	cout << "Patient mobile number: " <<mobile<< endl;
 
 }
 
