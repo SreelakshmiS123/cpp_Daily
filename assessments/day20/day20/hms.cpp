@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<string>
 using namespace std;
@@ -33,7 +34,11 @@ void doctorDetails(char ch)
 		cout << "Doctor available in general medicine department: ";
 		cout << "Dr.Vaishnavi SR"<<endl;
 		break;
+	default:
+		cout<<""
 	}
+	 
+
 
 }
 void selectRoom(int n)
@@ -43,9 +48,9 @@ void selectRoom(int n)
 }
 void treatmentDetails(string diagnosis, string plan, int duration)
 {
-	cout << "Disease found: " << diagnosis;
-	cout << "Treatment plan: " << plan;
-	cout << "Treatment duration: " << duration;
+	cout << "Disease found: " << diagnosis<<endl;
+	cout << "Treatment plan: " << plan<<endl;
+	cout << "Treatment duration: " << duration<<endl;
 }
 int main()
 {
