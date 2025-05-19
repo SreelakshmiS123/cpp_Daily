@@ -15,34 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="prg01.cpp">
+    <ClCompile Include="prg1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="prg02.cpp">
+    <ClCompile Include="prg2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="prg03.cpp">
+    <ClCompile Include="prg3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="prg04.cpp">
+    <ClCompile Include="prg4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="prg05.cpp">
+    <ClCompile Include="prg5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="prg06.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="prg07.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="prg08.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="prg09.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="hms.cpp">
+    <ClCompile Include="prg6.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

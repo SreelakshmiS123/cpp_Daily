@@ -96,7 +96,7 @@ void bookAppointment() {
     }
 
     cout << "Doctor " << doctors[doctorId - 1].name << " assigned to patient " << patients[patientId - 1].name << endl;
-    //doctors[doctorId - 1].Available = false; // Mark doctor as unavailable
+   // doctors[doctorId - 1].Available = false; 
 }
 int main() {
     int choice;
