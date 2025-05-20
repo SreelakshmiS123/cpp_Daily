@@ -21,7 +21,7 @@ typedef struct salary
 	int varpay;
 	int allowance;
 }SAL;
-void getDetails(EMP e, PER p,SAL s)
+void getDetails(EMP* e, PER p,SAL s)
 {
 	cout << "Enter employee ID" << endl;
 	cin >> e.empid;
