@@ -11,7 +11,7 @@ char* ATMAcc::getName()
 }
 void ATMAcc::currentBal()
 {
-	balance = 1;
+	balance = 0;
 }
 void ATMAcc::setDeposit(int amt)
 {

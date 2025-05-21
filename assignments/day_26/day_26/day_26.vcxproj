@@ -130,6 +130,17 @@
     <ClCompile Include="atm.h" />
     <ClCompile Include="ATMAcc.cpp" />
     <ClCompile Include="atmcMain.cpp" />
+    <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="clockmain.cpp" />
+    <ClCompile Include="Grade.cpp" />
+    <ClCompile Include="grademain.cpp" />
+    <ClCompile Include="Movie.cpp" />
+    <ClCompile Include="moviemain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clock.h" />
+    <ClInclude Include="grade.h" />
+    <ClInclude Include="movie.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
