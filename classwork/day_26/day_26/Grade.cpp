@@ -1,14 +1,17 @@
 #include<iostream>
 #include "grade.h"
 using namespace std;
-void Grade::getMark()
+void Grade:: setm1(int m)
 {
-	cout << "Enter mark 1: ";
-	cin >> m1;
-	cout << "Enter mark 2: ";
-	cin >> m2;
-	cout << "Enter mark 3: ";
-	cin >> m3;
+	m1 = m;
+}
+void Grade::setm2(int m)
+{
+	m2 = m;
+}
+void Grade::setm3(int m)
+{
+	m3 = m;
 }
 void Grade::calcAvg()
 {

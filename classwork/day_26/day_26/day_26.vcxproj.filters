@@ -54,9 +54,6 @@
     <ClCompile Include="Grade.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="grademain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clock.h">
@@ -66,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="grade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

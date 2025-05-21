@@ -7,9 +7,9 @@ protected:
 	float avg;
 public:
 	void setname();
-	void setm1();
-	void setm2();
-	void setm3();
+    void setm1(int);
+	void setm2(int);
+	void setm3(int);
 	//void getMark();
 	void calcAvg();
 	void display();
