@@ -2,9 +2,12 @@
 class ATMAcc
 {
 protected:
-	int balance;
+	int balance,amt,newbalance;
 	char holder[30];
 public:
+	void setName(char*);
+	char* getName();
+	void currentBal();
 	void setDeposit(int);
 	int getDeposit();
 	void setWithdraw(int);
