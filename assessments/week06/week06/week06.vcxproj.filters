@@ -41,5 +41,8 @@
     <ClCompile Include="DeliveryTip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="deliverymain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

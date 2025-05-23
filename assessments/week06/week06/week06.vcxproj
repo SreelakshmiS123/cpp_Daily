@@ -132,6 +132,7 @@
     <ClInclude Include="luggage.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="deliverymain.cpp" />
     <ClCompile Include="DeliveryTip.cpp" />
     <ClCompile Include="hotelmain.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
