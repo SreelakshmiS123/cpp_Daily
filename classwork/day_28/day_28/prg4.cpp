@@ -37,7 +37,14 @@ class Stack
 public:
 	Stack()
 	{
-		top = 0;
+		top = -1;
+	}
+	int push(string name,int id)
+	{
+		top++;
+		emp[top].setName(name);
+		emp[top].setID(id);
+
 	}
 };
 int main()
