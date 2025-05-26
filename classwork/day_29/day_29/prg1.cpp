@@ -47,6 +47,10 @@ int dequeue()
 }
 void display()
 {
+	if ((rear == front) || (front == MAX))
+	{
+		cout << "Queue is empty";
+	}
 	cout << "Queue elements are: " << endl;
 	for (int i = front;i < rear;i++)
 	{
