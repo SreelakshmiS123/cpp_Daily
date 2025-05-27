@@ -1,84 +1,79 @@
 #include <iostream>
+#include <iomanip> // For setting precision
 using namespace std;
 
-class Person {
-private:
-	string ssn;
+// Base class: Student
+class Student {
 protected:
-	int rollno;
-	string name;
-	int age;
+    int rollNo;
+    string name;
+    int age;
+
 public:
-	Person(string s, string n, char g, int a) : ssn(s), name(n), gender(g), age(a) {
-		cout << "Person Constr got called" << endl;
-	}
+    // Constructor to initialize student details
+    Student(int r, string n, int a) : rollNo(r), name(n), age(a) {
+        cout << "Student Constructor Called" << endl;
+    }
 
-	void dispPerson() {
+    // Method to display student details
+    void display() const {
+        cout << "Student Info:" << endl;
+        cout << "Roll No: " << rollNo << endl;
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+    }
 
-		cout << "Person Details are" << endl;
-		cout << "======================" << endl;
-		cout << "Name: " << name << endl;
-		cout << "ssn: " << ssn << endl;
-		cout << "Gender: " << gender << endl;
-		cout << "Age: " << age << endl;
-		cout << "======================" << endl;
-	}
-
-	~Person() {
-		cout << "Person Destr got called" << endl;
-	}
-protected:
-	void setSSN(string s) { ssn = s; }
-	// generate getters and setters
-public:
-	void setPerson(string s, string n, char g, int a) {
-		this->ssn = s; this->name = n; this->gender = g; this->age = a;
-	}
+    // Destructor
+    ~Student() {
+        cout << "Student Destructor Called" << endl;
+    }
 };
 
-class Employee : public Person
-{
+// Derived class: Marks
+class Marks : public Student {
 private:
-	int e_id;
-	float e_sal;
-	string e_desg;
-public:
-	Employee(string ssn, string n, char g, int age, int id, float sal, string desg) : Person(ssn, n, g, age), e_id(id), e_sal(sal), e_desg(desg) {
-		cout << "Employee Constr got called" << endl;
-	}
-	~Employee()
-	{
-		cout << "Employee Destr got called" << endl;
-	}
-	void dispEmp() const
-	{
-		cout << "Employee Details are" << endl;
-		cout << "======================" << endl;
-		cout << "ID: " << e_id << endl;
-		cout << "Salary: " << e_sal << endl;
-		cout << "Designation: " << e_desg << endl;
-		cout << "======================" << endl;
+    float marks1, marks2, marks3;
 
-	}
-	void updateName(string n) { name = n; }
-	void updateSSN(string s) { setSSN(s); }
+public:
+    // Constructor to initialize student and marks
+    Marks(int r, string n, int a, float m1, float m2, float m3)
+        : Student(r, n, a), marks1(m1), marks2(m2), marks3(m3) {
+        cout << "Marks Constructor Called" << endl;
+    }
+
+    // Method to calculate total and average marks
+    void calculate() const {
+        float total = marks1 + marks2 + marks3;
+        float average = total / 3;
+        cout << "Full Result:" << endl;
+        cout << "Total Marks: " << total << endl;
+        cout << "Average Marks: " << fixed << setprecision(2) << average << endl;
+    }
+
+    // Overloaded display method to show full result
+    void display(bool showFullResult) const {
+        if (showFullResult) {
+            calculate();
+        } else {
+            Student::display();
+        }
+    }
+
+    // Destructor
+    ~Marks() {
+        cout << "Marks Destructor Called" << endl;
+    }
 };
 
-int main()
-{
-	Employee eObj("ADH", "Bhima", 'm', 45, 101, 10000, "SSE");
-	eObj.dispPerson();
-	eObj.dispEmp();
-	eObj.updateName("shankar");
-	eObj.dispPerson();
-	eObj.dispEmp();
-	eObj.updateSSN("XYZ");
-	eObj.dispPerson();
-	//eObj.setSSN("JKL"); //calling protected method will create cmpl error
-	eObj.dispPerson();
-	eObj.setPerson("RRR", "Amit", 'M', 25);
-	eObj.dispPerson();
-	eObj.dispEmp();
-	return 0;
+int main() {
+    // Creating an object of Marks class
+    Marks student(101, "Alice", 20, 89, 76, 91);
 
+    // Displaying only student information
+    student.display(false);
+
+    // Displaying full result
+    student.display(true);
+
+    return 0;
 }
