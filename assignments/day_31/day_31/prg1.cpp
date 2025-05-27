@@ -50,15 +50,6 @@ public:
         cout << "Average Marks: " << fixed << setprecision(2) << average << endl;
     }
 
-    // Overloaded display method to show full result
-    void display(bool showFullResult) const {
-        if (showFullResult) {
-            calculate();
-        } else {
-            Student::display();
-        }
-    }
-
     // Destructor
     ~Marks() {
         cout << "Marks Destructor Called" << endl;
@@ -69,11 +60,11 @@ int main() {
     // Creating an object of Marks class
     Marks student(101, "Alice", 20, 89, 76, 91);
 
-    // Displaying only student information
-    student.display(false);
+    // Displaying student information
+    student.display();
 
     // Displaying full result
-    student.display(true);
+    student.calculate();
 
     return 0;
 }
