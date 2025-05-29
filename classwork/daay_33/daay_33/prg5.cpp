@@ -7,7 +7,7 @@ class Calculator
 	T2 data2;
 public:
 	Calculator(T1 v1, T2 v2) :data1(v1), data2(v2) {
-		cout << "Welcome to Sreelakshmi'S Calculator"<<endl;
+		cout << "My Calculator"<<endl;
 
 	}
 	void addition()
@@ -27,13 +27,20 @@ public:
 	}
 	void division()
 	{
-		cout << data1 << "/" << data2 << " is " << (data1 / data2) << endl;
+		if (data2 == 0)
+		{
+			cout << "Division by 0 is not possible";
+		}
+		else
+		{
+			cout << data1 << "/" << data2 << " is " << (data1 / data2) << endl;
+		}
 
 	}
 };
 int main()
 {
-	Calculator<int, int >intBox(20, 10);
+	Calculator<int, int >intBox(20, 0);
 	intBox.addition();
 	intBox.subtraction();
 	intBox.product();
