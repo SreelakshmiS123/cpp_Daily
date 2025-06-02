@@ -40,10 +40,10 @@ public:
 };
 int main()
 {
-	Calculator<int, int >intBox(20, 0);
-	intBox.addition();
-	intBox.subtraction();
-	intBox.product();
-	intBox.division();
+	Calculator<int,float >c(20, 1.4);
+	c.addition();
+	c.subtraction();
+	c.product();
+	c.division();
 
 }

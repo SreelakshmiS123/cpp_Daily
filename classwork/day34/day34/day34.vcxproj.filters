@@ -18,20 +18,25 @@
     <ClCompile Include="prg1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="student.cpp">
+    <ClCompile Include="prg2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="template.cpp">
+    <ClCompile Include="prg3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="prg4.cpp">
+    <ClCompile Include="employee1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="prg5.cpp">
+    <ClCompile Include="Finance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="prg6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Test1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="employee1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
