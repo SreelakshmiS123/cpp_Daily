@@ -18,7 +18,7 @@
     <ClCompile Include="task.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="taskmain.cpp">
+    <ClCompile Include="taskManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="batchWord.cpp">
@@ -31,6 +31,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="uniqueVisitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="textEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uniqueStock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scheduleConflict.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stockPrices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scoreTracker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
