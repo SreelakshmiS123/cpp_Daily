@@ -143,7 +143,7 @@ public:
 		upload=0;
 	}
 	
-	void printCutomer(const string& msisdn)
+	void printCustomer(const string& msisdn)
 	{
 		cout << "Customer ID: " << msisdn << "(" << b_name << ")"<<endl;
 		cout << "*Services within the mobile operator*"<<endl;
@@ -277,4 +277,5 @@ int main()
 		login();
 	CDRRecord c;
 	c.loadFromfile("input.txt");
+	c.print();
 }
