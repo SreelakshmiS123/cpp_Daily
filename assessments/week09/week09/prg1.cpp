@@ -16,7 +16,7 @@ bool signup()
 		cout << "Username already exist";
 		return false;
 	}
-	cout << "Enter password";
+	cout << "Enter password"<<endl;
 	cin >> password;
 	user[username] = password;
 	cout << "Signup is done";
@@ -42,6 +42,7 @@ bool login()
 		return false;
 	}
 	cout << username << "logged in successfully" << endl;
+	return true;
 }
 class CDR
 {
@@ -141,20 +142,8 @@ public:
 		download = 0;
 		upload=0;
 	}
-	void add(customer& other)
-	{
-		invoice += other.invoice;
-		outvoice += other.outvoice;
-		insms += other.insms;
-		outsms += other.outsms;
-		out_invoice += other.out_invoice;
-		out_outvoice += other.out_outvoice;
-		out_insms += other.out_insms;
-		out_outsms += other.out_outvoice;
-		download += other.download;
-		upload += other.upload;
-	}
-	void printCutomer(string& msisdn)
+	
+	void printCutomer(const string& msisdn)
 	{
 		cout << "Customer ID: " << msisdn << "(" << b_name << ")"<<endl;
 		cout << "*Services within the mobile operator*"<<endl;
@@ -187,14 +176,7 @@ public:
 		download = 0;
 		upload = 0;
 	}
-	void add(interOperator& other)
-	{
-		invoice += other.invoice;
-		outvoice += other.outvoice;
-		insms += other.insms;
-		outsms += other.outsms;
 
-	}
 	void printInter(string& mmc)
 	{
 		cout << "Operator brand: " << b_name << "(" << mmc << ")" << endl;
@@ -279,13 +261,20 @@ public:
 	{
 		cout << "#Customers Data Base: " << endl;
 		for (auto i : Customer_m)
-			printCustomer(i);
+			i.second.printCustomer(i.first);
 	}
 	
 };
 
 int main()
 {
+	string choice;
+	cout << "Enter signup/login: " << endl;
+	cin >> choice;
+	if (choice == "signup")
+		signup();
+	else if (choice == "login")
+		login();
 	CDRRecord c;
 	c.loadFromfile("input.txt");
 }
